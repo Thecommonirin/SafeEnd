@@ -1,8 +1,20 @@
 # SafeEnd
 
-> **Repeat-One-Safe-Suffix Defense for Jailbreak Mitigation**
+> **Mitigating Many-shot Jailbreak Attacks with One Single Demonstration**
 
 SafeEnd is a lightweight, plug-and-play defense method that appends **five repetitions of the same safe demonstration pair** at the end of a conversation context before forwarding it to the target LLM. By leveraging in-context learning (ICL), this "safe suffix" steers the model toward refusal behavior on subsequent harmful queries.
+
+## Overview
+
+<p align="center">
+  <img src="assets/overview.png" alt="SafeEnd overview" width="100%">
+</p>
+
+<p align="center">
+  <em>SafeEnd appends a one-shot safety suffix to pull the model behavior back toward the aligned state after harmful many-shot context induces safety drift.</em>
+</p>
+
+---
 
 This repository provides reference implementations for three representative jailbreak frameworks:
 
